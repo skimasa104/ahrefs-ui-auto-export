@@ -1,0 +1,15 @@
+node_modules/
+.ahrefs-profile/
+.google-profile/
+.jenkins-profile/
+.jenkins-profile-rankchecker/
+.jenkins-profile-rankchecker-5000clean/
+.jenkins-profile-rankchecker-5000test/
+downloads/
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+.env
+.DS_Store
+tmp_*

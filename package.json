@@ -1,0 +1,33 @@
+{
+  "name": "ahrefs-ui-auto-export",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "login": "node src/ahrefs-export.mjs login",
+    "export": "node src/ahrefs-export.mjs export",
+    "discover:targets": "node src/discover-targets-from-genre.mjs",
+    "discover:keywords": "node src/discover-targets-from-keywords.mjs",
+    "jenkins:run": "node src/run-jenkins-job.mjs",
+    "jenkins:ui": "node src/run-jenkins-ui-job.mjs",
+    "jenkins:imp": "node src/run-jenkins-imp.mjs",
+    "jenkins:rankchecker": "node src/run-jenkins-rankchecker.mjs",
+    "rankcheck:pivot": "node src/pivot-rank-check.mjs",
+    "rankcheck:domains": "node src/summarize-rank-domains.mjs",
+    "csv:spreadsheet": "node src/export-spreadsheet-tsv.mjs",
+    "rankcheck:top3": "node src/prepare-top3-batch-analysis.mjs",
+    "ahrefs:batch": "node src/run-ahrefs-batch-analysis.mjs",
+    "ahrefs:merge-top3-dr": "node src/merge-top3-dr.mjs",
+    "sheets:top3-dr": "node src/paste-top3-dr-to-google-sheet.mjs",
+    "expand:keywords": "node src/run-keyword-expansion-loop.mjs"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "csv-stringify": "^6.5.1",
+    "iconv-lite": "^0.6.3",
+    "playwright": "^1.54.2"
+  }
+}
